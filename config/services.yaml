@@ -1,0 +1,22 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Ntrx\UserBundle\:
+        resource: '../src/*'
+        exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
+
+    Ntrx\UserBundle\Controller\:
+        resource: '../src/Controller'
+        arguments: ['@doctrine.orm.entity_manager']
+        tags: ['controller.service_arguments']
+
+    ntrx_user_bundle.user_provider:
+        class: Ntrx\UserBundle\Security\UserProvider
+
+    ntrx_user_bundle.user_persistance_listener:
+        class: Ntrx\UserBundle\EventListener\UserPersistanceListener
+        tags:
+            - { name: doctrine.orm.entity_listener, event: prePersist, method: prePersist, entity: App\Entity\User, lazy: true }
+            - { name: doctrine.orm.entity_listener, event: preUpdate, method: preUpdate, entity: App\Entity\User, lazy: true }

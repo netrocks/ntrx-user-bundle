@@ -1,0 +1,8 @@
+/var/
+/vendor/
+
+/phpcs.xml
+
+.phpunit
+.phpunit.result.cache
+/phpunit.xml

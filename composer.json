@@ -1,0 +1,26 @@
+{
+    "name": "ntrx/ntrx-user-bundle",
+    "description": "NtrxUserBundle",
+    "license": "proprietary",
+    "type": "symfony-bundle",
+    "require": {
+        "php": "^7.2.5",
+        "doctrine/orm": "^2.7",
+        "jms/serializer-bundle": "^3.5",
+        "symfony/mailer": "5.0.*",
+        "symfony/orm-pack": "*",
+        "symfony/security-bundle": "5.0.*",
+        "symfony/twig-pack": "*",
+        "symfony/validator": "5.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ntrx\\UserBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}

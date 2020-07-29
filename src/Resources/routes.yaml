@@ -1,0 +1,3 @@
+ntrx_user_bundle:
+    resource: ../Controller/
+    type: annotation

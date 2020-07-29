@@ -1,0 +1,5 @@
+Hello {{ user.email }},
+
+thanks for your registration. You can confirm your account by clicking on the following link:
+
+{{ path('ntrx_userbundle_password_request', {token: confimation_token}) }}

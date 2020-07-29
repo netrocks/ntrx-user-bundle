@@ -1,0 +1,11 @@
+Passwort reset
+
+{% for label, messages in app.flashes %}
+	{% for message in messages %}
+		<div>
+			{{ label }}: {{ message }}
+		</div>
+	{% endfor %}
+{% endfor %}
+
+{{ form(form) }}
