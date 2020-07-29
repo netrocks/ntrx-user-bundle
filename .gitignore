@@ -1,5 +1,6 @@
 /var/
 /vendor/
+composer.lock
 
 /phpcs.xml
 

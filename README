@@ -1,7 +1,8 @@
 NtrxUserBundle
 ================
 
-Das NtrxUserBundle wurde erstellt um die Lücke zu schließen, die das FOSUserBundle hinterlassen hat. Das NtrxUserBundle stellt eine Implementation eines User-Managements dar. Dazu gehören Aufgaben wie die Registrierung und eine Passwort-Wiederherstellung. Das Bundle ist dabei so schlank und flexibel wie möglich.
+The NtrxUserBundle was created to close the gap the FOSUserBundle has left.
+It is an implementation of an user-management-system and includes tasks like the registration or the password recovery. The bundle is as slim and flexible as possible.
 
 
 Installation
